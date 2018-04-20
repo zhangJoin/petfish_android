@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@mipmap/noimage" />
+
+            <LinearLayout style="@style/rootlinearlayout">
+
+                <TextView
+                    style="@style/roottextview"
+                    android:text="产品名称：" />
+
+                <TextView
+                    android:id="@+id/tv_other_name"
+                    style="@style/roottextviewshow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/rootlinearlayout">
+
+                <TextView
+                    style="@style/roottextview"
+                    android:text="产品价格：" />
+
+                <TextView
+                    android:id="@+id/tv_other_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/rootlinearlayout">
+
+                <TextView
+                    style="@style/roottextview"
+                    android:text="产品类别：" />
+
+                <TextView
+                    android:id="@+id/tv_other_type"
+                    style="@style/roottextviewshow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/rootlinearlayout">
+
+                <TextView
+                    style="@style/roottextview"
+                    android:text="产品材质：" />
+
+                <TextView
+                    android:id="@+id/tv_other_material"
+                    style="@style/roottextviewshow" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_other_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:lineSpacingExtra="@dimen/dp_3"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/text_normal_color"
+                android:textSize="@dimen/sp_14" />
+            <TextView
+                android:id="@+id/tv_other_intro_iamge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="产品图片:"
+                android:visibility="gone"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/sp_14" />
+            <GridView
+                android:id="@+id/gv_other_detail"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:numColumns="3"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:verticalSpacing="@dimen/dp_10" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/iv_img_info"
+        style="@style/image_item"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:id="@+id/tv_date_info"
+        style="@style/textview_item"
+        android:layout_alignBottom="@+id/iv_img_info"
+        android:layout_toEndOf="@+id/iv_img_info" />
+
+    <TextView
+        android:id="@+id/tv_title_info"
+        style="@style/textview_item1"
+        android:layout_toEndOf="@+id/iv_img_info" />
+</RelativeLayout>

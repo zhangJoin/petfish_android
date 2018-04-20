@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">观赏鱼</string>
+    <string name="text_main_home">首页</string>
+    <string name="text_main_fish">观赏鱼</string>
+    <string name="text_main_enterprise">企业</string>
+    <string name="text_main_other">周边产品</string>
+    <string name="text_main_line">联系我们</string>
+    <string name="welcomebtn">开始体验</string>
+    <string name="tv_all">全部</string>
+    <string name="interneterror">网络异常，请连接网络</string>
+    <string name="intro" >简介：</string>
+    <string name="habit" >生活习性:</string>
+    <string name="floorprice" >参考价格:</string>
+    <string name="introduction">形态特征:</string>
+    <string name="methods">养殖方法:</string>
+    <string name="variety">品种分类:</string>
+    <string name="picture">参考图片:</string>
+    <string name="productIntro" >产品介绍:</string>
+
+    <array name="tab_item_home">
+        <item>资讯@fish@0</item>
+        <item>展示@fish@1</item>
+        <item>养殖@fish@2</item>
+        <item>疾病预防@fish@3</item>
+    </array>
+</resources>

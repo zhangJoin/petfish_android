@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_company_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_company_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="天津观赏鱼科技园"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_company_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="2017/09/11"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_company_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:lineSpacingExtra="@dimen/dp_3"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/text_normal_color"
+                android:textSize="@dimen/sp_14" />
+            <GridView
+                android:id="@+id/gv_company_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:numColumns="3"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:horizontalSpacing="@dimen/dp_5"
+                ></GridView>
+            <LinearLayout style="@style/rootlinearlayout">
+
+                <TextView
+                    style="@style/roottextview"
+                    android:text="地址: " />
+
+                <TextView
+                    android:id="@+id/tv_company_address"
+                    style="@style/roottextviewshow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/rootlinearlayout">
+
+                <TextView
+                    style="@style/roottextview"
+                    android:text="联系人: " />
+
+                <TextView
+                    android:id="@+id/tv_company_contactPeople"
+                    style="@style/roottextviewshow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/rootlinearlayout">
+
+                <TextView
+                    style="@style/roottextview"
+                    android:text="电话: " />
+
+                <TextView
+                    android:id="@+id/tv_company_phone"
+                    style="@style/roottextviewshow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/rootlinearlayout">
+
+                <TextView
+                    style="@style/roottextview"
+                    android:text="价格: " />
+
+                <TextView
+                    android:id="@+id/tv_company_price"
+                    style="@style/roottextviewshow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/rootlinearlayout">
+
+                <TextView
+                    style="@style/roottextview"
+                    android:text="养殖品种: " />
+
+                <TextView
+                    android:id="@+id/tv_company_type"
+                    style="@style/roottextviewshow" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_company_intro_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="参考图片: "
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+            <com.gage.petfish_android.ui.view.MyGridView
+                android:id="@+id/gv_company_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:horizontalSpacing="@dimen/dp_5"
+                android:verticalSpacing="@dimen/dp_10"></com.gage.petfish_android.ui.view.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

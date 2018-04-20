@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_item_other"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"
+        android:src="@mipmap/noimage" />
+    <TextView
+        android:id="@+id/tv_item_title"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/iv_item_other"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:text="小的就很高级返回估计会房间积分兑换刚好反的激活工具的返回估计号国际饭店环境规划"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#646464"
+        android:paddingLeft="@dimen/dp_10"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_item_title"
+        >
+        <TextView
+            android:id="@+id/tv_item_material"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:text="材质：玻璃"
+            android:singleLine="true"
+            android:maxEms="10"
+            android:paddingLeft="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textColor="#646464"
+            android:layout_height="wrap_content"/>
+        <!-- <ImageView
+           android:id="@+id/act_adapter_order_iv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignBottom="@id/act_adapter__address_tv"
+           android:layout_marginBottom="5dp"
+           android:layout_alignParentBottom="true"
+           android:layout_centerVertical="true"
+           android:contentDescription="@null"
+           android:layout_marginRight="10dp"
+           android:scaleX="1.1"
+           android:scaleY="1.1"
+           android:src="@drawable/order"/> -->
+        <TextView
+            android:id="@+id/tv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignRight="@id/tv_item_material"
+            android:text="￥50"
+            android:textColor="@color/red"
+            android:layout_alignBottom="@id/tv_item_material"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>
